@@ -1,0 +1,52 @@
+body{
+    margin: 2px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    height: 98vh;
+}
+    div{
+        border-radius: 5px;
+    }
+.div1 {
+    grid-column: span 2 ;
+    grid-row: span 2 ;
+    background-color: #0000ff;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    background-color: #1b1b44;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: #b5ffc1;
+}
+
+.div4 {
+    grid-column-start: 5;
+    grid-row-start: 2;
+    background-color: #b5ffc1;
+}
+
+.div5 {
+    grid-column-start: 5;
+    grid-row-start: 3;
+    background-color: #f34e78;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: #b5b5ff;
+}
+        

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to right, #ff3c5f, #6a5cff);
+}
+
+.box {
+    background: #ffc107;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.full {
+    grid-column: 1 / -1;
+    grid-row: 4;}
+.box3 {
+    width: 100%;
+}
